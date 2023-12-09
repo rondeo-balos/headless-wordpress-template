@@ -4,11 +4,11 @@
 <?php
     if( isset($_GET['id']) ) {
         extract( $_GET );
-        $media = cms::get_content('media/'.$id.'?_fields=id,date,alt_text,media_type,author,title,author,caption,description,guid.rendered,media_details');
+        $media = cms::get_content('media/'.$id.'?_fields=id,date,alt_text,media_type,author,title,author,caption,description,source_url,media_details');
         ?>
             <div class="row" style="height: 100%;">
                 <div class="col-md-7" style="height: 100%">
-                    <img style="width: 100%; height: 100%; object-fit: contain;" src="<?= $media['guid']['rendered'] ?>" alt="<?= $media['alt_text'] ?>">
+                    <img style="width: 100%; height: 100%; object-fit: contain;" src="<?= $media['source_url'] ?>" alt="<?= $media['alt_text'] ?>">
                 </div>
                 <div class="col-md-5">
                     <p>
