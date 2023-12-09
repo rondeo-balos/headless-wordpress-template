@@ -43,6 +43,12 @@ with font-awesome or any other icon font library -->
                         <p>Dashboard</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="index.php?page=page" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Pages</p>
+                    </a>
+                </li>
                 <li class="nav-item parent">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-camera"></i>

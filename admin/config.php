@@ -7,6 +7,18 @@ define('AUTH', '`,YX;8H*xuM|Vu7[HO])^G2W}!g^gU5:xNOu-e~S6uKG,|T4WhQkuxM*!~rR9Q _
 
 $all_roles = ['administrator', 'subscriber', 'contributor', 'editor', 'author'];
 $pages = array(
+    'page' => array(
+        'title' => 'Pages',
+        'page' => './pages/page.php',
+        'description' => '',
+        'permission' => ['administrator']
+    ),
+    'page-edit' => array(
+        'title' => 'Edit Page',
+        'page' => './pages/page-edit.php',
+        'description' => '',
+        'permission' => ['administrator']
+    ),
     'media' => array(
         'title' => 'Media',
         'page' => './pages/media.php',
